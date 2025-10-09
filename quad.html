@@ -4,6 +4,126 @@
     <meta charset="UTF-8"> <!--Defines character encoding to text displays properly-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Makes it responsive for mobile devices-->
     <title>Quad Skating for All</title> <!--Title that shows in browser tab -->
+    <style>
+        /*Base sytels*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background:linear-gradient(135deg, #0f0f1f 0%, #1a0a2e 100%);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            overflow-x: : hidden;
+        }
+        /*Neon Text Effects*/
+        .neon-text {
+            color: #fff;
+            text-shadow:
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 15px #ff00ff,
+            0 0 20px #ff00ff,
+            0 0 35px #ff00ff;
+            animation: neon-pulse 2s infinite alternate;
+        }
+        .neon-green{
+            color: #00ff00;
+            text-shadow: 
+            0 0 5px #00ff00,
+            0 0 10px #00ff00,
+            0 0 15px #00ff00,
+            0 0 20px #00ff00;
+        }
+        @keyframes neon-pulse {
+            from {
+                text-shadow: 
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 15px #ff00ff,
+                0 0 20px #ff00ff;
+            }
+            to {
+                text-shadow: 
+                0 0 10px #fff,
+                0 0 15px #fff,
+                0 0 20px #ff00ff,
+                0 0 25px #ff00ff,
+                0 0 30px #ff00ff;
+            }
+        }
+        /*Header style*/
+        header {
+            background: rgba(138, 43, 226, 0.2);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 2px solid #ff00ff;
+            box-shadow: 0 0 15px rgba (255, 0 , 255, 0.5);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+        /*Navigation*/
+        nav {
+            background: rgba(0,0255,0,0.1);
+            padding: 1rem;
+            text-align: center;
+            border-bottom:1px solid #00ff00;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        nav a :hover{
+            background: rgba(255, 0, 255, 0.3);
+            box-shadow: 0 0 10px rgba (255,0,255, 0.7);
+        }
+        /*Main Content*/
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(20,10,30,0.7);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 0, 255, 0.3);
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #ff00ff;
+            border-bottom: 1px solid #ff00ff;
+            padding-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin: 1.5rem 0 1rem;
+            color:#00ff00;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+    </style>
 </head>
 <body><!--The visible contect of the webpage-->
     <header> <!--The top section of the page, usually for logo, title or navigation-->
