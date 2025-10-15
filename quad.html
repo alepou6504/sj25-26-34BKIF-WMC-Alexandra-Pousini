@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Makes it responsive for mobile devices-->
     <title>Quad Skating for All</title> <!--Title that shows in browser tab -->
     <style>
-        /*Base sytels*/
+        /*Base styles*/
         *{
             margin: 0;
             padding: 0;
@@ -121,6 +121,53 @@
         p {
             margin-bottom: 1rem;
             font-size: 1.1rem;
+        }
+        /*Button Style*/
+        button {
+            background: linear-gradient(45deg, #ff00ff, #00ff00);
+            color: #000;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba (255,0,255,0.5);
+            margin-top: 1rem;
+        }
+        button:hover{
+            transform:scale(1.5);
+            box.shadow:0 0 20px rgba (255,0,255, 0.8);
+        }
+        .caption{
+            position:absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            background: rgba(0,0,0,0.7);
+            color:#fff;
+            padding:0.5rem;
+            text-align: center;
+        }
+        /*Footer*/
+        footer {
+            background:rgba(138,43,226,0.2);
+            padding: 2rem;
+            text-align: center;
+            border-top:2px solid #ff00ff
+            margin-top:3rem;
+        }
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        /*Animation for movement*/
+        @@keyframes slide: {
+            0% {transform: translateX(-100px); opacity 0;}
+            100% {transform: translateX(0), opacity: 1;}
+        }
+        .slide-in{
+            animation: slide 0.8s ease-out;
         }
 
     </style>
