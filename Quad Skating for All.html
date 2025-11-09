@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Csdc/sj25-26-34BKIF-WMC-Alexandra-Pousini/quad.html -->
+<html lang="en"><!--Root of the doc, sets language en --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <!--Defines character encoding to text displays properly-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Makes it responsive for mobile devices-->
+    <title>Quad Skating for All</title> <!--Title that shows in browser tab -->
+<style> 
+    /*Base Styles*/
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(135deg, #0f0f1f 0%, #1a0a2e 100%);
+        color: #fff;
+        font-family:  'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        overflow-x: hidden;
+        
+        /*Neon Text Effects */
+        .neon.-text 
+       color: #fff;
+       text-shadow: 
+       0 0 5px #fff,
+       0 0 10px #fff,
+       0 0 15px #ff00ff,
+       0 0 20px #ff00ff,
+       0 0 35px #ff00ff;
+       animation: neon-pulse 2s infinate alternate;
+    }
+
+    .neon-green {
+        color: #00ff00;
+        text-shadow: 
+        0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 15px #00ff00,
+        0 0 20px #00ff00;
+    }
+    @keyframes neon-pulse {
+        from {
+            text-shadow: 
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 15px #ff00ff,
+            0 0 20px #ff00ff;
+        }
+        to {
+            text-shadow:
+            0 0 10px #fff,
+            0 0 15px #fff,
+            0 0 20px #ff00ff,
+            0 0 25px #ff00ff,
+            0 0 30px #ff00ff;
+        }
+    }
+    /*Header Styles*/
+    header {
+        background: rgba(138, 43, 226, 0.2);
+        padding: 2rem;
+        text-align: center;
+        border-bottom: 2px solid #ff00ff;
+        box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    }   
+    h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        letter-spacing: 2px;
+    }
+    /*Navigation*/
+    nav {
+        background: rgbs(0,255,0,0.1);
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 1px solid #00ff00;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        bonder-radius: 4px;
+        transition: all 0.3s ease;
+    }
+    nav a :hover {
+        background: rgba(255,0,255,0.3);
+        box-shadow: 0 0 10px rgba(255,0,255,0.7);
+    }
+    /*Main Content)*/ 
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    section {
+        margin-bottom: 3rem;
+        padding. 2rem;
+        background: rgba(20,10,30,0.7);
+        border-radius: 10px;
+        border: 1px solid rgba (255,0,255,0.3);
+        box-shadow: 0 0 rgba(138, 43, 226, 0.2);
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #ff00ff;
+        border-bottom: 1px solid #ff00ff;
+        padding-bottom: 0.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        margin: 1.5rem 1rem;
+        color: #00ff00;
+    }
+    p {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+    /* Button Styles*/
+    button {
+        background:linear-gradient(45deg, #ff00ff, #00ff00);
+        color: #000;
+        border: none;
+        padding: none;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px rgba(255,0,255,0.5);
+        margin-top: 1rem;
+    }
+    button:hover {
+        transform: scale(1.05);
+        box-shadow:0 20px rgba (255,0,255,0.8);
+    }
+    /*Image Gallery*/
+    .gallery {
+        display:grid;
+        grid-template-columns: repeat (auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        border: 2px solid #ff00ff;
+        box-shadow: 0 0 15px rgba(255,0,255,0.5);
+        transition: transform 0.3s ease;
+    }
+    .gallery-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 25px rgba(255,0,255,0.8);
+    }
+    .gallery-item img {
+        width: 100%,
+        height: 200px;
+        object-fit: cover;
+        display: block;
+    }
+    .caption  {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba (0,0,0,0.7);
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+}
+/*Footer*/
+footer{
+    background: rgba(138, 43, 226, 0.2);
+    padding: 2rem;
+    text-align: center;
+    border-top: 2px solid #ff00ff;
+    margin-top: 3rem;
+}
+footer p {
+    margin-bottom: 0.5rem;
+}
+/*Animation for movement*/
+@keyframes slide {
+    0% {transform: translateX(-100px); opacity: 0;}
+    100% {transform: translateX(; opacity: 1;}
+}
+.slide-in {
+    animation: slide 0.8s ease-out;
+}
+/*Responsive Design*/
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+</style>
+</head>
+<body>
+    <headeer>
+        <h1 class="neon-text">Quad Skating for All!</h1>
+        <p class="neon-green">Experience the thrill of movement and freedom</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#What-is">What is Quad Skating?</a></li>
+            <li><a href="where-to">Where to Skate?</a></li>
+            <li><a href="Safety">Safety Tips</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="skating-section">
+        <h2 class= "pulse"> What is Quad Skating?</h2>
+        <p class= "intro-text">
+            Quad Skating is more than just a sport or hobby- it is a<span class="highlight"> dance with momentum, a conversation with gravity, and a celebration of the moment</span> that connects mind, body and pavement in perfect harmony.
+        </p>
+        <div class="freedom-text floating">
+            There is a moment when the wheels find their rhythm and the world blurs at the edges. That is when you discover the true meaning of freedom on eight wheels.
+        </div>
+        <p class="intro-text">
+            With two wheels at the fron and two at the back, wuad skates offer a stability tha becomes an extension of your body, allowing expressive movements that inline skates con not replicate.
+            this unique design opens up a world of stylistic possibilities:
+        </p>
+        <div class="styles-container">
+        <div class="style-card">
+            <h3 class=""style-title>Rhythm & Dancehall</h3>
+            <p class="style-description">
+                Where skating meets dance, creating fluid movements that sync with the beat.
+                Skaters weave intricate patterns on the floor, expressing themselves through graceful motions and rhythmic
+                steps that transfrom the rink into a dancefloor. 
+            </p>
+        </div>
+        <div class="style-card">
+            <h3 class= "style-title"> Roller Derby</h3>
+            <p class="style-description">
+                The team sport of quad skating, fast, strategic adn fiercely competitive. 
+                Players zip around the track, executing precise maneuvers while
+                working together in a display of athleticism, strategy and sheer determination.
+            </p>
+        </div>
+        <div class="style-card">
+            <h3 class="style-title">Jam Skating</h3>
+            <P class="style-description">
+                A vibrant fusion of dance, gymnastics and roller skating. 
+                Jam skaters icorporate breakdancing moves, spins and acrobatics intro-texttheir routines, creating an energetic performance 
+                that pushes the bpundaries of what is possible on wheels.
+            </P>
+        </div>
+        <div class="style-card">
+            <h3 class="style-title">Artistic Skating</h3>
+            <p class="style-description">
+                The elegant cousin of figure skating on wheels. Skaters perform precisely 
+                choreographed routines with jumps, spins and footwork sequences, combining
+                technical precision with artistic expression in a beautiful display of grace.
+            </p>
+        </div>
+        <p class="intro-text" style="margin-top:3rem">
+            Whether you are gliding under disco balls at the rink, 
+            weaving through city streets at dawn,
+            or carving lines at the skate park, quad skating offers
+            a unique sence of liberation that stays with you 
+            long after you have taken off your skates.
+        </p>
+    </section>
+
+    <section id="where-to" class="slide-in">
+        <h2>Where to Skate in Vienna</h2>
+        <p> Vienna offers fantastic locations for quad skating, from scenic paths
+            along the Danube to dadicated skate parks with all the features you need 
+            to practice and improve your skills.
+        </p>
+        <div class="locations-containner">
+        <div class="location-card">
+            <h3 class="location-title">Donauinsel</h3>
+            <p class="location-description">
+                The Danauinsel offers miles of smooth, car-free paths perfect for 
+                long-distance skating. Enjoy the scenic views of the river while you skate, 
+                with plnety of spots to rest and enjoy the nature.
+            </p>
+        </div>
+
+        <div class="location-card">
+            <h3 class="location-title">Prater Allee</h3>
+                <p class="location-description">
+                    The famous Hauptallee in Prater provides a wide, tree-lined avenue
+                    ideal for skating. The flat, smooth surface is perfect for beginners
+                    and the length allows for uninterrupted skating sessions.
+                </p>
+            </div>
+        <div class="location-card">
+            <h3 class="location-title"Donaukanal></h3>
+                <p class="location-description">
+                    Skate along the vibrat Danube Canal with its colorful street
+                    art and urban atmosphere. The paths are well-maintained and you will often 
+                    find other saters to join for a session.
+                </p>
+        </div>
+
+        <div class="location-card">
+            <h3 class="location-title">Skateparks</h3>
+            <p class="location-description">
+                Vienna has several skateparks with ramps, bowls and rails for more
+                advanced skating. Check out facilities at Donauinsel Skatepark or the Währinger
+                Park for challenging terrain.
+            </p>
+        </div>
+        <p style="margin-top: 2rem; ">
+            Always look for places without rocks, debris or significant cracks
+            that could cause falls. The smoother the surface, the better your
+            skating experience will be!!
+        </p>
+
+        <section id="Safety-grid">
+            <div class="safety-card">
+                <h2 class="safety-card"></h2>
+                    <p> Safety should always be your top priority when quad skating.
+                        Follow these essential tips to ensure every skating sassion is 
+                        both fun and safe.</p>
+
+            <div class="safety-grid">
+                <div class="safety-card">
+                    <h3 class="safety-title">Protective Gear</h3>
+                    <ul class="safty-list">
+                        <li><strong>Helmet</strong>-Essential for protecting your head from serious injury</li>
+                        <li><strong>Wrist guards</strong>-Prevent wrist fracture during falls</li>
+                        <li><strong>Knee and elbow pads</strong>-Protect your joints from impact</li>
+                        <li><strong>Mouth guard</strong>-Recommended for aggressive skating</li>
+                    </ul>
+                </div>
+
+                <div class="safety-card">
+                    <h3 class="safety-title">Skating Technique</h3>
+                    <ul class="safty-list">
+                        <li>Bend your knees slightly for better balance and shock absorption</li>
+                        <li>Keep your weight centered over your skates</li>
+                        <li>Look ahead, not down at your feet</li>
+                        <li>Practice stopping techniques liek the T-Stop or plow stop</li>
+                        <li>Learn to fall correctly by rolling with the impact</li>
+                    </ul>
+                </div>
+
+                <div class="safety-card">
+                    <h3 class="safety-title">Environmental Awareness</h3>
+                    <ul class="safety-list">
+                        <li>Always check your skating surface for debris, cracks or obstacles</li>
+                        <li>Be aware of your surroundings, including other skate and pedestrians</li>
+                        <li>Skate in well-lit areas if skating at night</li>
+                        <li>Avoid skating in wet conditions as it reduces wheel traction</li>
+                        <li>Respect the traffic rules when sakting near roads</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="freedom-text" style="margin-top: 2rem;">
+                Remember: Everyone falls when learning. It is part of the process!
+                The trick is learning how to fall safely and get back up with a smile.
+            </div>
+            <p>@2025 Quad Skatign for All. All rihts reserved</p>
+        </section>
+    </section>
+
+    </main>
+</body>
