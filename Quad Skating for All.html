@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Csdc/sj25-26-34BKIF-WMC-Alexandra-Pousini/quad.html -->
+
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Makes it responsive for mobile devices-->
+    <title>Quad Skating for All</title> <!--Title that shows in browser tab -->
+
+    <style> 
+    /*Base Styles*/
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(135deg, #0f0f1f 0%, #1a0a2e 100%);
+        color: #fff;
+        font-family:  'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+        
+        /*Neon Text Effects */
+        .neon-text {
+       color: #ff00ff;
+       text-shadow: 
+       0 0 5px #fff,
+       0 0 10px #fff,
+       0 0 15px #ff00ff,
+       0 0 20px #ff00ff,
+       0 0 35px #ff00ff;
+       animation: neon-pulse 2s infinate alternate;
+    }
+
+    .neon-green {
+        color: #00ff00;
+        text-shadow: 
+        0 0 5px #00ff00,
+        0 0 10px #00ff00,
+        0 0 15px #00ff00,
+        0 0 20px #00ff00;
+    }
+    @keyframes neon-pulse {
+        from {
+            text-shadow: 
+            0 0 5px #fff,
+            0 0 10px #fff,
+            0 0 15px #ff00ff,
+            0 0 20px #ff00ff;
+        }
+        to {
+            text-shadow:
+            0 0 10px #fff,
+            0 0 15px #fff,
+            0 0 20px #ff00ff,
+            0 0 25px #ff00ff,
+            0 0 30px #ff00ff;
+        }
+    }
+    
+    /*Header Styles*/
+    header {
+        background: rgba(138, 43, 226, 0.2);
+        padding: 3rem 2rem ;
+        text-align: center;
+        border-bottom: 2px solid #ff00ff;
+        box-shadow: 0 0 15px rgba(255, 0, 255, 0.308);
+        position: relative;
+        overflow: hidden;
+    }  
+        header::before {
+        content : '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, rgba(0,255,0,0.1)), transparent;
+        z-index: -1;
+    }
+    .header.content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+    .logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(255,0,255,0.7);
+        border: 3px solid #fff;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: logo-rotate 8s linear infinite;
+    }
+    .logo img{
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    }
+    .trademark{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 0.7rem;
+        color: #fff;
+        background: rgba(0,0,0,0.7);
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+    }
+    @keyframes logo-rotate {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        letter-spacing: 2px;
+        box-shadow: 0 0 20px rgba(255,0,255,0.7);
+        
+    }
+
+    /*Navigation*/
+    nav {
+        background: rgbs(0,255,0,0.1);
+        padding: 1.2rem;
+        text-align: center;
+        border-bottom: 1px solid #00ff00;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.7rem 1.5rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    nav a:hover {
+        background: rgba(255,0,255,0.3);
+        box-shadow: 0 0 10px rgba(255,0,255,0.7);
+    }
+
+    nav a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #00ff00, transparent);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+    nav a:hover::after{
+        transform: scaleX(1);
+    }
+    /*Main Content)*/ 
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    section {
+        margin-bottom: 4rem;
+        padding: 3rem;
+        background: rgba(20,10,30,0.7);
+        border-radius: 15px;
+        border: 1px solid rgba (255,0,255,0.3);
+        box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+        position: relative;
+        overflow: hidden;
+    }
+    section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, #ff00ff, #00ff00);
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        color: #ff00ff;
+        text-shadow: 0 0 10px rgba(255,0,255,0.7);
+        position: relative;
+        padding-bottom: 0rem;
+        text-align: center;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    h2::after{
+        content: '';
+        position: absolute;
+        bottom:0; 
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #ff00ff, #00ff00);
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        margin: 2rem 0 1rem;
+        color: #00ff00;
+        text-shadow: 0 0 8px rgba(0,255,0,0.5);
+    }
+    p {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        color: #e0e0ff;
+    }
+    .intro-text {
+        font-size: 1.3rem;
+        margin-bottom: 2.5rem;
+        position: relative;
+        padding: 0 1rem;
+    }
+    .freedom-text{
+        font-size: 1.6rem;
+        font-style: italic;
+        text-align: center;
+        margin: 2.5rem 0;
+        padding: 2.5rem;
+        background: rgba(0,255,0,0.1);
+        border-left: 4px solid #ff00ff;
+        border-right: 4px solid #00ff00;
+        border-radius: 10px;
+        position: relative;
+        color: #ffffff;
+        text-shadow: 0 0 5px rgba(255,255,255,0.5);
+    }
+
+    .freedom-text::before,.freedom-text::after {
+        content: '"';
+        font-size: 4rem;
+        color: #00ff00;
+        position: absolute;
+        opacity: 0.7;
+       }
+       .freedom-text::before{
+        top: 0;
+        left: 1.5rem;
+       }
+       .freedom-text::after{
+        bottom: -2rem;
+        right: 1.5rem;
+       }
+
+    .highlight {
+        color:#00ff00;
+        font-weight: bold;
+        text-shadow: 0 0 5px rgba(0,255,0,0.5);
+    }
+    /*Styles Container*/
+    .style-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .style-card {
+        background: rgba(30, 15, 45, 0.7);
+        padding: 2rem;
+        transition: all 0.4s ease;
+        border: 1px solid rgba (255,0,255,0.20);
+        position: relative;
+        overflow: hidden;
+        }
+    .style-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, #ff00ff, #00ff00);
+    }
+    .style-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25 rgba(255, 0, 255, 0.3);
+        border-color: rgba(0,255,0,0.5);
+    }
+    .style-title {
+        font-size: 16.rem;
+        margin-bottom: 1rem;
+        color: #00ff00;
+        text-shadow: 0 0 8px rgba(0,255,0,0.5);
+        display: flex;
+        align-items: center;
+    }
+    .style-title::before {
+        content: '✦';
+        margin-right: 10px;
+        color: #20c207;
+    }
+    .style-discription {
+        color: #d0d0ff;
+        font-size: 1.1rem;
+    }
+
+    */Location Section*/
+    .locations-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .location-card {
+        background: rgba(30, 15, 45, 0.7);
+        border-radius: 12px;
+        padding: 2rem;
+        transition: all 0.4s ease;
+        border: 1px, solid rgba(255,0,255,0.2);
+        position: relative;
+        overflow: hidden;
+    }
+    .location-card::before {
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, #ff00ff, #00ff00);
+    }
+    .location-card:hover {
+        transform: tramslateY(-5px);
+        box-shadow: 0 10px 25px rgba(255,0,255,0.3);
+    }
+    .location-title {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        color: #00ff00;
+        text-shadow: 0 0 8px rgba(0,255,0,0.5);
+        display: flex;
+        align-items: center;
+    }
+    .location-title::before{
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        background: radial-gradient(circle, #00ff00 30%, transparent 70%);
+        border: 2px solid #00ff00;
+        border-radius: 50%;
+        box-shadow: 0 0 5px #00ff00,
+                    0 0 10px #00ff00,
+                    0 0 15px #00ff00;
+                    inset 0 0 5px #00ff00;
+        animation: wheel-spin 3s linear infinite;
+
+        animation: wheel-spin 3s linear infinite;
+    }
+    @keyframes wheel-spin {
+        0%{transform:rotate(0deg)}
+        100%{transform: rotate(360deg);}
+    }
+    .location-description {
+        color: #d0d0ff;
+        font-size: 1.1rem;
+    }
+
+    /*Safety Section*/
+    .safety-grid {
+        display: grid;
+        grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .safety-card {
+        background: rgba (30, 15, 45, 0.7);
+        border-radius: 12px;
+        padding: 2rem;
+        transition: all 0.4s ease;
+        border: 1px solid rgba (255,0,255,0.2);
+        position: relative;
+        overflow: hidden;
+    }
+    .safety-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, #ff00ff, #00ff00);
+    }
+    .safety-card:hover {
+        transform:  translateY(-5px);
+        box-shadow: 0 10px 25px rgba(255,0,255,0.3);
+    }
+    .safety-title {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        color: #00ff00;
+        text-shadow: 0 0 8px rgba(0,255,0,0.5);
+        display: flex;
+        align-items: center;
+    }
+    .safety-title:before {
+        content: '⚡';
+        margin-right: 10px;
+        color: #ff00ff;
+        font-size: 1.4rem;
+        animation: elecctric-pulse 1.5s infinite;
+    }
+    @keyframes electric-pulse {
+        0%, 100% { transform: scale(1), opacity: 1;}
+        50% { transform: scale(1.2); opacity: 0.8;}
+    }
+    .safety-list {
+        color: #d0d0ff;
+        font-size: 1.1rem;
+        padding-left: 1.5rem;
+    }
+    .safety-list li {
+        margin-bottom: 0.8rem;
+        position: relative;
+    }
+    .safety-list li:before {
+        content: '▸';
+        color: #ff00ff;
+        font-weight: bold;
+        position: absolute;
+        left: -1.2rem;
+        text-shadow: 0 0 5px #ff00ff;
+    }
+    /* Buttons*/
+    .tn {
+        background: linear-gradient(45deg, #ff00ff, #00ff00);
+        color: #000;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 10px rgba(255,0,25,0.5);
+        margin-top: 1rem;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba (255,0,255,0.8);
+    }
+
+/*Footer*/
+footer{
+    background: rgba(138, 43, 226, 0.2);
+    padding: 3rem;
+    text-align: center;
+    border-top: 2px solid #ff00ff;
+    margin-top: 3rem;
+    position: relative;
+}
+footer p {
+    margin-bottom: 0.5rem;
+}
+.footer-logo {
+    margin-bottom: 1.5rem;
+}
+.footer-logo .logo {
+    width: 80px;
+    height: 80px;
+}
+/*Animation for movement*/
+.pulse {
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0%{text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff;}
+    50%{text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff;}
+    100%{text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;}
+}
+.floating {
+    animation: floating 3s ease-in-out-infinite;
+}
+@keyframes floating {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-10px);}
+    100%{transform: translateY(0px);}
+}
+.slide-in {
+    animation: slide 0.8s ease-out;
+}
+@keyframes slide {
+    0% {tranfrom: translateY(-100px); opacity: 0;}
+    100% {tranfrom: translateY(0); opacity: 0;}
+}
+
+/*Responsive Design*/
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    section {
+        padding: 2rem;
+    }
+    .content-with-graphic {
+        grid-template-columns: 1fr;;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+</style>
+</head>
+
+<body>
+    <header>
+        <div class= "header-content">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="C:\Users\alexp\Downloads\Ale_Pou-Logo.png"
+                <span></span>
+               </div>
+        </div>
+
+        <h1 class="neon-text pulse">Quad Skating for All!</h1>
+        <p class="neon-green">Experience the thrill of movement and freedom</p>
+    </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#What-is">What is Quad Skating?</a></li>
+            <li><a href="where-to">Where to Skate?</a></li>
+            <li><a href="Safety">Safety Tips</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="what-is" class="slide-in">
+        <h2 class= "pulse"> What is Quad Skating?</h2>
+        <p class= "intro-text">
+            Quad Skating is more than just a sport or hobby- it is a
+            dance with momentum, a conversation with gravity, and a 
+            celebration of the moment that connects
+            mind, body and pavement in perfect harmony.
+        </p>
+
+        <div class="freedom-text floating">
+            There is a moment when the wheels find their rhythm and the world
+            blurs at the edges. That is when you discover the true meaning of 
+            freedom on eight wheels.
+        </div>
+
+        <p class="intro-text">
+            With two wheels at the front and two at the back, quad skates
+            offer a stability that becomes an extension of your body, allowing
+            expressive movements that inline skates cannot replicate.
+            This unique design opens up a world of stylistic possibilities:
+        </p>
+        </div>
+
+        <div class="styles-container">
+        <div class="style-card">
+            <h3 class=""style-title>Rhythm & Dancehall</h3>
+            <p class="style-description">
+            Where skating meets dance, creating fluid movements that sync with
+            the beat. Skaters weave intricate patterns on the floor, 
+            expressing themselves through graceful motions and rhythmic
+            steps that transfrom the rink into a dancefloor. 
+            </p>
+        </div>
+
+        <div class="style-card">
+            <h3 class= "style-title">Roller Derby</h3>
+            <p class="style-description">
+            The team sport of quad skating, fast, strategic and fiercely 
+            competitive. Players zip around the track, executing precise 
+            maneuvers while working together in a display of athleticism,
+             strategy and sheer determination.
+            </p>
+        </div>
+
+        <div class="style-card">
+            <h3 class="style-title">Jam Skating</h3>
+            <P class="style-description">
+            A vibrant fusion of dance, gymnastics and roller skating. Jam 
+            skaters icorporate breakdancing moves, spins and acrobatics 
+            into their routines, creating an energetic performance that 
+            pushes the boundaries of what is possible on wheels.
+            </P>
+        </div>
+
+        <div class="style-card">
+            <h3 class="style-title">Artistic Skating</h3>
+            <p class="style-description">
+            The elegant cousin of figure skating on wheels. Skaters perform
+            precisely choreographed routines with jumps, spins and footwork
+            sequences, combining technical precision with artistic expression
+            in a beautiful display of grace.
+            </p>
+        </div>
+
+    <section id="where-to" class="slide-in">
+        <h2 class= "pulse"> Where to Skate in Vienna</h2>
+        <p> Vienna offers fantastic locations for quad skating, from scenic paths
+            along the Danube to dadicated skate parks with all the features you need 
+            to practice and improve your skills.
+        </p>
+        <div class="location-card">
+            <h3 class="location-title">Donauinsel</h3>
+            <p class="location-description">
+                The Donauinsel offers miles of smooth, car-free paths perfect for 
+                long-distance skating. Enjoy the scenic views of the river while you skate, 
+                with plenty of spots to rest and enjoy the nature.
+            </p>
+        </div>
+
+        <div class="location-card">
+            <h3 class="location-title">Prater Allee</h3>
+                <p class="location-description">
+                    The famous Hauptallee in Prater provides a wide, tree-lined avenue
+                    ideal for skating. The flat, smooth surface is perfect for beginners
+                    and the length allows for uninterrupted skating sessions.
+                </p>
+            </div>
+        <div class="location-card">
+            <h3 class="location-title">Donaukanal</h3>
+                <p class="location-description">
+                    Skate along the vibrat Danube Canal with its colorful street
+                    art and urban atmosphere. The paths are well-maintained and you will often 
+                    find other skaters to join for a session.
+                </p>
+        </div>
+
+        <div class="location-card">
+            <h3 class="location-title">Skateparks</h3>
+            <p class="location-description">
+                Vienna has several skateparks with ramps, bowls and rails for more
+                advanced skating. Check out facilities at Donauinsel Skatepark or the Währinger
+                Park for challenging terrain.
+            </p>
+        </div>
+        <p style="margin-top: 2rem; ">
+            Always look for places without rocks, debris or significant cracks
+            that could cause falls. The smoother the surface, the better your
+            skating experience will be!!
+        </p>
+
+        <section id="where-to" class="slide-in">
+        <h2 class= "pulse"> Tips & Tricks</h2>
+                
+                    <p> Safety should always be your top priority when quad skating.
+                        Follow these essential tips to ensure every skating sassion is 
+                        both fun and safe.</p>
+
+            
+                <div class="safety-card">
+                    <h3 class="safety-title">Protective Gear</h3>
+                    <ul class="safety-list">
+                        <li><strong>Helmet</strong>-Essential for protecting your head from serious injury</li>
+                        <li><strong>Wrist guards</strong>-Prevent wrist fracture during falls</li>
+                        <li><strong>Knee and elbow pads</strong>-Protect your joints from impact</li>
+                        <li><strong>Mouth guard</strong>-Recommended for aggressive skating</li>
+                    </ul>
+                </div>
+
+                <div class="safety-card">
+                    <h3 class="safety-title">Skating Techniques</h3>
+                    <ul class="safety-list">
+                        <li>Bend your knees slightly for better balance and shock absorption</li>
+                        <li>Keep your weight centered over your skates</li>
+                        <li>Look ahead, not down at your feet</li>
+                        <li>Practice stopping techniques liek the T-Stop or plow stop</li>
+                        <li>Learn to fall correctly by rolling with the impact</li>
+                    </ul>
+                </div>
+
+                <div class="safety-card">
+                    <h3 class="safety-title">Environmental Awareness</h3>
+                    <ul class="safety-list">
+                        <li>Always check your skating surface for debris, cracks or obstacles</li>
+                        <li>Be aware of your surroundings, including other skate and pedestrians</li>
+                        <li>Skate in well-lit areas if skating at night</li>
+                        <li>Avoid skating in wet conditions as it reduces wheel traction</li>
+                        <li>Respect the traffic rules when sakting near roads</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="freedom-text" style="margin-top: 2rem;">
+                Remember: Everyone falls when learning. It is part of the process!
+                The trick is learning how to fall safely and get back up with a smile.
+            </div>
+            <footer>
+                <div class="footer-logo">
+                    <div class="logo">                                                
+                        <img src="C:\Users\alexp\Downloads\Ale_Pou-Logo.png">
+                         <span class="trademark">™</span>
+                    </div>
+                </div>
+            <p>@2025 Quad Skatign for All. All rights reserved</p>
+            <p>AlePou™ is a registered trademark. All content and branding are protected</p>
+            </footer>
+
+            <script>
+                document.querySelectorAll('nav a').forEach(anchor=> {
+                    anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetID = this.getAttribute(href);
+                    const targetElement=  document.querySelector(targetID);
+
+                    if (targetElement){
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'  
+                        });
+                    }
+                });
+            </script>
+        </section>
+    </section>
+
+    </main>
+</body>
+</html>
