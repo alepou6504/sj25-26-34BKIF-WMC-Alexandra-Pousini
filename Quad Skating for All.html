@@ -218,442 +218,431 @@
             padding: 3rem;
             background: rgba(20, 10, 30, 0.7);
             border-radius: 15px;
-            border: 1px solid rgba (255, 0, 255, 0.3);
-            box-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
 
-        section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, #ff00ff, #00ff00);
-        }
 
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            color: #ff00ff;
-            text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
-            position: relative;
-            padding-bottom: 0rem;
-            text-align: center;
-            background: none;
-            border: none;
-            box-shadow: none;
-        }
-
-        h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(90deg, #ff00ff, #00ff00);
-        }
-
-        h3 {
-            font-size: 1.8rem;
-            margin: 2rem 0 1rem;
-            color: #00ff00;
-            text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-            color: #e0e0ff;
-        }
-
-        .intro-text {
-            font-size: 1.3rem;
-            margin-bottom: 2.5rem;
-            position: relative;
-            padding: 0 1rem;
-        }
-
-        .freedom-text {
-            font-size: 1.6rem;
-            font-style: italic;
-            text-align: center;
-            margin: 2.5rem 0;
-            padding: 2.5rem;
-            background: rgba(0, 255, 0, 0.1);
-            border-left: 4px solid #ff00ff;
-            border-right: 4px solid #00ff00;
-            border-radius: 10px;
-            position: relative;
-            color: #ffffff;
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-        }
-
-        .freedom-text::before,
-        .freedom-text::after {
-            content: '"';
-            font-size: 4rem;
-            color: #00ff00;
-            position: absolute;
-            opacity: 0.7;
-        }
-
-        .freedom-text::before {
-            top: 0;
-            left: 1.5rem;
-        }
-
-        .freedom-text::after {
-            bottom: -2rem;
-            right: 1.5rem;
-        }
-
-        .highlight {
-            color: #00ff00;
-            font-weight: bold;
-            text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
-        }
-
-        /*Styles Container*/
-        .style-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .style-card {
-            background: rgba(30, 15, 45, 0.7);
-            padding: 2rem;
-            transition: all 0.4s ease;
-            border: 1px solid rgba (255, 0, 255, 0.20);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .style-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, #ff00ff, #00ff00);
-        }
-
-        .style-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 25 rgba(255, 0, 255, 0.3);
-            border-color: rgba(0, 255, 0, 0.5);
-        }
-
-        .style-title {
-            font-size: 16.rem;
-            margin-bottom: 1rem;
-            color: #00ff00;
-            text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
-            display: flex;
-            align-items: center;
-        }
-
-        .style-title::before {
-            content: '✦';
-            margin-right: 10px;
-            color: #20c207;
-        }
-
-        .style-discription {
-            color: #d0d0ff;
-            font-size: 1.1rem;
-        }
-
-        */Location Section*/ .locations-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .location-card {
-            background: rgba(30, 15, 45, 0.7);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: all 0.4s ease;
-            border: 1px, solid rgba(255, 0, 255, 0.2);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .location-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, #ff00ff, #00ff00);
-        }
-
-        .location-card:hover {
-            transform: tramslateY(-5px);
-            box-shadow: 0 10px 25px rgba(255, 0, 255, 0.3);
-        }
-
-        .location-title {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            color: #00ff00;
-            text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
-            display: flex;
-            align-items: center;
-        }
-
-        .location-title::before {
-            content: '';
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-            background: radial-gradient(circle, #00ff00 30%, transparent 70%);
-            border: 2px solid #00ff00;
-            border-radius: 50%;
-            box-shadow: 0 0 5px #00ff00,
-                0 0 10px #00ff00,
-                0 0 15px #00ff00;
-            inset 0 0 5px #00ff00;
-            animation: wheel-spin 3s linear infinite;
-
-            animation: wheel-spin 3s linear infinite;
-        }
-
-        @keyframes wheel-spin {
-            0% {
-                transform: rotate(0deg)
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .location-description {
-            color: #d0d0ff;
-            font-size: 1.1rem;
-        }
-
-        /*Safety Section*/
-        .safety-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .safety-card {
-            background: rgba (30, 15, 45, 0.7);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: all 0.4s ease;
-            border: 1px solid rgba (255, 0, 255, 0.2);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .safety-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, #ff00ff, #00ff00);
-        }
-
-        .safety-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(255, 0, 255, 0.3);
-        }
-
-        .safety-title {
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            color: #00ff00;
-            text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
-            display: flex;
-            align-items: center;
-        }
-
-        .safety-title:before {
-            content: '⚡';
-            margin-right: 10px;
-            color: #ff00ff;
-            font-size: 1.4rem;
-            animation: elecctric-pulse 1.5s infinite;
-        }
-
-        @keyframes electric-pulse {
-
-            0%,
-            100% {
-                transform: scale(1), opacity: 1;
-            }
-
-            50% {
-                transform: scale(1.2);
-                opacity: 0.8;
-            }
-        }
-
-        .safety-list {
-            color: #d0d0ff;
-            font-size: 1.1rem;
-            padding-left: 1.5rem;
-        }
-
-        .safety-list li {
-            margin-bottom: 0.8rem;
-            position: relative;
-        }
-
-        .safety-list li:before {
-            content: '▸';
-            color: #ff00ff;
-            font-weight: bold;
-            position: absolute;
-            left: -1.2rem;
-            text-shadow: 0 0 5px #ff00ff;
-        }
-
-        /* Buttons*/
-        .tn {
-            background: linear-gradient(45deg, #ff00ff, #00ff00);
-            color: #000;
-            border: none;
-            padding: 0.8rem 1.5rem;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 10px rgba(255, 0, 25, 0.5);
-            margin-top: 1rem;
-            display: inline-block;
-            text-decoration: none;
-        }
-
-        .btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba (255, 0, 255, 0.8);
-        }
-
-        /*Footer*/
-        footer {
-            background: rgba(138, 43, 226, 0.2);
-            padding: 3rem;
-            text-align: center;
-            border-top: 2px solid #ff00ff;
-            margin-top: 3rem;
-            position: relative;
-        }
-
-        footer p {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-logo {
-            margin-bottom: 1.5rem;
-        }
-
-        .footer-logo .logo {
-            width: 80px;
-            height: 80px;
-        }
-
-        /*Animation for movement*/
-        .pulse {
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% {
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff;
-            }
-
-            50% {
-                text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff;
-            }
-
-            100% {
-                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
-            }
-        }
-
-        .floating {
-            animation: floating 3s ease-in-out-infinite;
-        }
-
-        @keyframes floating {
-            0% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-
-            100% {
-                transform: translateY(0px);
-            }
-        }
-
-        .slide-in {
-            animation: slide 0.8s ease-out;
-        }
-
-        @keyframes slide {
-            0% {
-                tranfrom: translateY(-100px);
-                opacity: 0;
-            }
-
-            100% {
-                tranfrom: translateY(0);
-                opacity: 0;
-            }
-        }
-
-        /*Responsive Design*/
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            h1 {
-                font-size: 2rem;
+            section::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: linear-gradient(90deg, #ff00ff, #00ff00);
             }
 
             h2 {
-                font-size: 1.5rem;
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+                color: #ff00ff;
+                text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+                position: relative;
+                padding-bottom: 0rem;
+                text-align: center;
+                background: none;
+                border: none;
+                box-shadow: none;
             }
 
-            section {
+            h2::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: linear-gradient(90deg, #ff00ff, #00ff00);
+            }
+
+            h3 {
+                font-size: 1.8rem;
+                margin: 2rem 0 1rem;
+                color: #00ff00;
+                text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+            }
+
+            p {
+                margin-bottom: 1.5rem;
+                font-size: 1.1rem;
+                color: #e0e0ff;
+            }
+
+            .intro-text {
+                font-size: 1.3rem;
+                margin-bottom: 2.5rem;
+                position: relative;
+                padding: 0 1rem;
+            }
+
+            .freedom-text {
+                font-size: 1.6rem;
+                font-style: italic;
+                text-align: center;
+                margin: 2.5rem 0;
+                padding: 2.5rem;
+                background: rgba(0, 255, 0, 0.1);
+                border-left: 4px solid #ff00ff;
+                border-right: 4px solid #00ff00;
+                border-radius: 10px;
+                position: relative;
+                color: #ffffff;
+                text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            }
+
+            .freedom-text::before,
+            .freedom-text::after {
+                content: '"';
+                font-size: 4rem;
+                color: #00ff00;
+                position: absolute;
+                opacity: 0.7;
+            }
+
+            .freedom-text::before {
+                top: 0;
+                left: 1.5rem;
+            }
+
+            .freedom-text::after {
+                bottom: -2rem;
+                right: 1.5rem;
+            }
+
+            .highlight {
+                color: #00ff00;
+                font-weight: bold;
+                text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+            }
+
+            /*Styles Container*/
+            .style-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+
+            .style-card {
+                background: rgba(30, 15, 45, 0.7);
                 padding: 2rem;
-            }
+                transition: all 0.4s ease;
 
-            .content-with-graphic {
-                grid-template-columns: 1fr;
-                ;
-            }
 
-            .logo {
-                width: 100px;
-                height: 100px;
-            }
-        }
+                .style-card::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background: linear-gradient(90deg, #ff00ff, #00ff00);
+                }
+
+                .style-card:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 10px 25 rgba(255, 0, 255, 0.3);
+                    border-color: rgba(0, 255, 0, 0.5);
+                }
+
+                .style-title {
+                    font-size: 16.rem;
+                    margin-bottom: 1rem;
+                    color: #00ff00;
+                    text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+                    display: flex;
+                    align-items: center;
+                }
+
+                .style-title::before {
+                    content: '✦';
+                    margin-right: 10px;
+                    color: #20c207;
+                }
+
+                .style-discription {
+                    color: #d0d0ff;
+                    font-size: 1.1rem;
+                }
+
+                */Location Section*/ .locations-container {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 2rem;
+                    margin-top: 2rem;
+                }
+
+                .location-card {
+                    background: rgba(30, 15, 45, 0.7);
+                    border-radius: 12px;
+                    padding: 2rem;
+                    transition: all 0.4s ease;
+                    border: 1px, solid rgba(255, 0, 255, 0.2);
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .location-card::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background: linear-gradient(90deg, #ff00ff, #00ff00);
+                }
+
+                .location-card:hover {
+                    transform: tramslateY(-5px);
+                    box-shadow: 0 10px 25px rgba(255, 0, 255, 0.3);
+                }
+
+                .location-title {
+                    font-size: 1.6rem;
+                    margin-bottom: 1rem;
+                    color: #00ff00;
+                    text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+                    display: flex;
+                    align-items: center;
+                }
+
+                .location-title::before {
+                    content: '';
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
+                    background: radial-gradient(circle, #00ff00 30%, transparent 70%);
+                    border: 2px solid #00ff00;
+                    border-radius: 50%;
+                    box-shadow: 0 0 5px #00ff00,
+                        0 0 10px #00ff00,
+                        0 0 15px #00ff00;
+                    inset 0 0 5px #00ff00;
+                    animation: wheel-spin 3s linear infinite;
+
+                    animation: wheel-spin 3s linear infinite;
+                }
+
+                @keyframes wheel-spin {
+                    0% {
+                        transform: rotate(0deg)
+                    }
+
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                .location-description {
+                    color: #d0d0ff;
+                    font-size: 1.1rem;
+                }
+
+                /*Safety Section*/
+                .safety-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 2rem;
+                    margin-top: 2rem;
+                }
+
+                .safety-card {
+                    background: rgba (30, 15, 45, 0.7);
+                    border-radius: 12px;
+                    padding: 2rem;
+                    transition: all 0.4s ease;
+                    border: 1px solid rgba (255, 0, 255, 0.2);
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                .safety-card::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 4px;
+                    background: linear-gradient(90deg, #ff00ff, #00ff00);
+                }
+
+                .safety-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 25px rgba(255, 0, 255, 0.3);
+                }
+
+                .safety-title {
+                    font-size: 1.6rem;
+                    margin-bottom: 1rem;
+                    color: #00ff00;
+                    text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+                    display: flex;
+                    align-items: center;
+                }
+
+                .safety-title:before {
+                    content: '⚡';
+                    margin-right: 10px;
+                    color: #ff00ff;
+                    font-size: 1.4rem;
+                    animation: elecctric-pulse 1.5s infinite;
+                }
+
+                @keyframes electric-pulse {
+
+                    0%,
+                    100% {
+                        transform: scale(1), opacity: 1;
+                    }
+
+                    50% {
+                        transform: scale(1.2);
+                        opacity: 0.8;
+                    }
+                }
+
+                .safety-list {
+                    color: #d0d0ff;
+                    font-size: 1.1rem;
+                    padding-left: 1.5rem;
+                }
+
+                .safety-list li {
+                    margin-bottom: 0.8rem;
+                    position: relative;
+                }
+
+                .safety-list li:before {
+                    content: '▸';
+                    color: #ff00ff;
+                    font-weight: bold;
+                    position: absolute;
+                    left: -1.2rem;
+                    text-shadow: 0 0 5px #ff00ff;
+                }
+
+                /* Buttons*/
+                .tn {
+                    background: linear-gradient(45deg, #ff00ff, #00ff00);
+                    color: #000;
+                    border: none;
+                    padding: 0.8rem 1.5rem;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    box-shadow: 0 0 10px rgba(255, 0, 25, 0.5);
+                    margin-top: 1rem;
+                    display: inline-block;
+                    text-decoration: none;
+                }
+
+
+                /*Footer*/
+                footer {
+                    background: rgba(138, 43, 226, 0.2);
+                    padding: 3rem;
+                    text-align: center;
+                    border-top: 2px solid #ff00ff;
+                    margin-top: 3rem;
+                    position: relative;
+                }
+
+                footer p {
+                    margin-bottom: 0.5rem;
+                }
+
+                .footer-logo {
+                    margin-bottom: 1.5rem;
+                }
+
+                .footer-logo .logo {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                /*Animation for movement*/
+                .pulse {
+                    animation: pulse 2s infinite;
+                }
+
+                @keyframes pulse {
+                    0% {
+                        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff;
+                    }
+
+                    50% {
+                        text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff;
+                    }
+
+                    100% {
+                        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+                    }
+                }
+
+                .floating {
+                    animation: floating 3s ease-in-out-infinite;
+                }
+
+                @keyframes floating {
+                    0% {
+                        transform: translateY(0px);
+                    }
+
+                    50% {
+                        transform: translateY(-10px);
+                    }
+
+                    100% {
+                        transform: translateY(0px);
+                    }
+                }
+
+                .slide-in {
+                    animation: slide 0.8s ease-out;
+                }
+
+                @keyframes slide {
+                    0% {
+                        tranfrom: translateY(-100px);
+                        opacity: 0;
+                    }
+
+                    100% {
+                        tranfrom: translateY(0);
+                        opacity: 0;
+                    }
+                }
+
+                /*Responsive Design*/
+                @media (max-width: 768px) {
+                    nav ul {
+                        flex-direction: column;
+                        gap: 0.5rem;
+                    }
+
+                    h1 {
+                        font-size: 2rem;
+                    }
+
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+
+                    section {
+                        padding: 2rem;
+                    }
+
+                    .content-with-graphic {
+                        grid-template-columns: 1fr;
+                        ;
+                    }
+
+                    .logo {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
     </style>
 </head>
 
@@ -662,7 +651,7 @@
         <div class="header-content">
             <div class="logo-container">
                 <div class="logo">
-                    <img src="img\Ale_Pou-Logo.png" alt="Ale Pou Logo">
+                    <img src="img/Ale_Pou-Logo.png" alt="Ale Pou Logo">
                 </div>
             </div>
 
@@ -673,9 +662,9 @@
 
     <nav>
         <ul>
-            <li><a href="#What-is">What is Quad Skating?</a></li>
-            <li><a href="where-to">Where to Skate?</a></li>
-            <li><a href="Safety">Safety Tips</a></li>
+            <li><a href="#what-is">What is Quad Skating?</a></li>
+            <li><a href="#where-to">Where to Skate?</a></li>
+            <li><a href="#safety">Safety Tips</a></li>
         </ul>
     </nav>
 
@@ -701,11 +690,11 @@
                 expressive movements that inline skates cannot replicate.
                 This unique design opens up a world of stylistic possibilities:
             </p>
-            </div>
+
 
             <div class="styles-container">
                 <div class="style-card">
-                    <h3 class="" style-title>Rhythm & Dancehall</h3>
+                    <div class="style-title">Rhythm & Dancehall</div>
                     <p class="style-description">
                         Where skating meets dance, creating fluid movements that sync with
                         the beat. Skaters weave intricate patterns on the floor,
@@ -713,8 +702,13 @@
                         steps that transfrom the rink into a dancefloor.
                     </p>
                 </div>
+            </div>
 
-                <div class="style-card">
+
+
+            <div class="style-card">
+                <div class="style-title">
+                    <h3>Freestyle Slalom</h3>
                     <h3 class="style-title">Roller Derby</h3>
                     <p class="style-description">
                         The team sport of quad skating, fast, strategic and fiercely
@@ -790,45 +784,48 @@
                         skating experience will be!!
                     </p>
 
-                    <section id="where-to" class="slide-in">
-                        <h2 class="pulse"> Tips & Tricks</h2>
 
-                        <p> Safety should always be your top priority when quad skating.
-                            Follow these essential tips to ensure every skating sassion is
-                            both fun and safe.</p>
+                    <h2 class="pulse"> Tips & Tricks</h2>
 
+                    <p> Safety should always be your top priority when quad skating.
+                        Follow these essential tips to ensure every skating sassion is
+                        both fun and safe.</p>
+                </section>
 
-                        <div class="safety-card">
-                            <h3 class="safety-title">Protective Gear</h3>
-                            <ul class="safety-list">
-                                <li><strong>Helmet</strong>-Essential for protecting your head from serious injury</li>
-                                <li><strong>Wrist guards</strong>-Prevent wrist fracture during falls</li>
-                                <li><strong>Knee and elbow pads</strong>-Protect your joints from impact</li>
-                                <li><strong>Mouth guard</strong>-Recommended for aggressive skating</li>
-                            </ul>
-                        </div>
+                <section id="safety">
+                    <div class="safety-card">
 
-                        <div class="safety-card">
-                            <h3 class="safety-title">Skating Techniques</h3>
-                            <ul class="safety-list">
-                                <li>Bend your knees slightly for better balance and shock absorption</li>
-                                <li>Keep your weight centered over your skates</li>
-                                <li>Look ahead, not down at your feet</li>
-                                <li>Practice stopping techniques liek the T-Stop or plow stop</li>
-                                <li>Learn to fall correctly by rolling with the impact</li>
-                            </ul>
-                        </div>
+                        <h3 class="safety-title">Protective Gear</h3>
+                        <ul class="safety-list">
+                            <li><strong>Helmet</strong>-Essential for protecting your head from serious injury</li>
+                            <li><strong>Wrist guards</strong>-Prevent wrist fracture during falls</li>
+                            <li><strong>Knee and elbow pads</strong>-Protect your joints from impact</li>
+                            <li><strong>Mouth guard</strong>-Recommended for aggressive skating</li>
+                        </ul>
+                    </div>
 
-                        <div class="safety-card">
-                            <h3 class="safety-title">Environmental Awareness</h3>
-                            <ul class="safety-list">
-                                <li>Always check your skating surface for debris, cracks or obstacles</li>
-                                <li>Be aware of your surroundings, including other skate and pedestrians</li>
-                                <li>Skate in well-lit areas if skating at night</li>
-                                <li>Avoid skating in wet conditions as it reduces wheel traction</li>
-                                <li>Respect the traffic rules when sakting near roads</li>
-                            </ul>
-                        </div>
+                    <div class="safety-card">
+                        <h3 class="safety-title">Skating Techniques</h3>
+                        <ul class="safety-list">
+                            <li>Bend your knees slightly for better balance and shock absorption</li>
+                            <li>Keep your weight centered over your skates</li>
+                            <li>Look ahead, not down at your feet</li>
+                            <li>Practice stopping techniques liek the T-Stop or plow stop</li>
+                            <li>Learn to fall correctly by rolling with the impact</li>
+                        </ul>
+                    </div>
+
+                    <div class="safety-card">
+                        <h3 class="safety-title">Environmental Awareness</h3>
+                        <ul class="safety-list">
+                            <li>Always check your skating surface for debris, cracks or obstacles</li>
+                            <li>Be aware of your surroundings, including other skate and pedestrians</li>
+                            <li>Skate in well-lit areas if skating at night</li>
+                            <li>Avoid skating in wet conditions as it reduces wheel traction</li>
+                            <li>Respect the traffic rules when sakting near roads</li>
+                        </ul>
+                    </div>
+                </section>
             </div>
             <div class="freedom-text" style="margin-top: 2rem;">
                 Remember: Everyone falls when learning. It is part of the process!
@@ -837,31 +834,15 @@
             <footer>
                 <div class="footer-logo">
                     <div class="logo">
-                        <img src="img\Ale_Pou-Logo.png" alt="Ale Pou Logo">
+                        <img src="img/Ale_Pou-Logo.png" alt="Ale Pou Logo">
                         <span class="trademark">™</span>
                     </div>
                 </div>
                 <p>@2026 Quad Skatign for All. All rights reserved</p>
                 <p>AlePou™ is a registered trademark. All content and branding are protected</p>
             </footer>
-
-            <script>
-                document.querySelectorAll('nav a').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        const targetID = this.getAttribute(href);
-                        const targetElement = document.querySelector(targetID);
-
-                        if (targetElement) {
-                            window.scrollTo({
-                                top: targetElement.offsetTop - 80,
-                                behavior: 'smooth'
-                            });
-                        }
-                    });
-            </script>
         </section>
-        </section>
+
 
     </main>
 </body>
